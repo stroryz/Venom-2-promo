@@ -10,8 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/jquery.fancybox.min.js"></script>
+    <script defer src="./js/main.js"></script>
   </head>
   <body class="blood">
     <div class="container">
@@ -26,6 +29,22 @@
           />
         </a>
         <nav class="nav">
+          <button class="menu-button">
+            <span class="menu-button-text">меню</span>
+            <img
+              src="./img/burger.svg"
+              alt="icon: burger menu"
+              class="menu-button-icon"
+            />
+          </button>
+          <button class="menu-close">
+            <span class="menu-close-text">закрыть</span>
+            <img
+              src="./img/arrow.svg"
+              alt="icon: arrow right"
+              class="menu-close-icon"
+            />
+          </button>
           <ul class="nav-menu">
             <li class="nav-menu-item">
               <a href="about.html" class="nav-menu-link">о фильме</a>
@@ -57,7 +76,11 @@
         </div>
         <!-- /.hero-text -->
         <div class="button-group">
-          <button class="button button-primary">
+          <a
+            class="button button-primary"
+            data-fancybox
+            href="https://www.youtube.com/watch?v=Othd8W8o3t0"
+          >
             <img
               width="15"
               src="./img/play.svg"
@@ -65,7 +88,7 @@
               class="button-icon"
             />
             <span class="button-text">смотреть трейлер</span>
-          </button>
+          </a>
           <a href="trailer.html" class="button button-link">
             <img
               width="15"
@@ -80,5 +103,6 @@
       </section>
     </div>
     <img src="./img/venom.png" alt="image: venom" class="venom" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   </body>
 </html>
